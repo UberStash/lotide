@@ -1,8 +1,7 @@
-//const assertEqual = require('../assertEqual');
 
-const eqArrays = function(arrOne, arrTwo) {
+module.exports = function(arrOne, arrTwo) {
  
-  if (arrOne.toString() == arrTwo.toString()) {
+  if (arrOne.toString() === arrTwo.toString() && arrOne.length === arrTwo.length && typeof arrOne === typeof arrTwo) {
     return true;
   } else {
     return false;
@@ -11,5 +10,5 @@ const eqArrays = function(arrOne, arrTwo) {
 };
 
 
-module.exports = eqArrays;
+// module.exports = {eqArrays};
 

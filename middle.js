@@ -1,19 +1,4 @@
 
-const assertArrayEqual = function(a, b) {
-  if (typeof a !== typeof b || eqArrays(a, b) === false) {
-    console.log(`🤯🤯🤯 Assertion Failed: ${a} !== ${b}`);
-  } else if (typeof a === typeof b && eqArrays(a, b) === true) {
-    console.log(`👍👍👍 Assertion Passed: ${a} === ${b}`);
-  }
-};
-
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.toString() === arrTwo.toString()) {
-    return true;
-  } else {
-    return false;
-  }
-};
 
 
 
@@ -32,10 +17,9 @@ const middle = function(arr) {
     solution.push(arr[divide - 1], arr[divide]);
   }
 
-
+console.log(solution)
   return solution;
 };
 
-assertArrayEqual(middle([1, 7, 8, 6, 6]), [8]);
-assertArrayEqual(middle([1, 7,]), []);
-assertArrayEqual(middle([1, 1, 7, 8, 6, 6]), [7, 8]);
+module.exports = middle;
+
