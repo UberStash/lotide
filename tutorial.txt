@@ -1,0 +1,10 @@
+
+P pastes it to the cursor's current position.
+dd will delete the whole line of text. This will also effectively "cut" a line of text as well. When you delete a line, it's placed in the buffer.
+yy copies a whole line of text.
+y copies same as yy?
+shift :w to save file
+shift :wq save and quit
+shift :q! quit and ignore changes to file
+text to copy
+text to copy
