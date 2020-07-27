@@ -5,7 +5,7 @@ const tail = function(words) {
       newArr.push(words[i]);
     }
   }
-  console.log(newArr)
+ 
   return newArr;
   
 };
