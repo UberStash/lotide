@@ -1,11 +1,9 @@
-const assertEqual = require('./assertEqual');
 
-const head = function(arr, expected) {
+const head = function(arr) {
   let first;
   first = arr.shift();
-  assertEqual(first, expected)
+  return first;
 };
-
 
 
 module.exports = head;
